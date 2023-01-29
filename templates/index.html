@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Colors</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+        <div  class="loader"></div>
+
+  <form class="transparent" action="/" method="POST" enctype="multipart/form-data" style="text-align : center">
+
+
+            <div class="input-group mb-3">
+                <h4 style="text-align : center">Choose an Image</h4>
+                <span>
+                    <input name="img" id="img" type="file" class="form-control">
+                </span>
+            </div>
+
+
+            <button onclick="spinner()" type="submit" class="btn btn-outline-success">Upload</button>
+      <br>
+      <br>
+      <br>
+      <br>
+              <img src="{{url_for('static', filename='img.png')}}" alt="Color Pallette" width="50%" height="50%">
+              <img src="{{url_for('static', filename='color.png')}}" alt="Color Pallette" width="500" height="500">
+
+        </form>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    function spinner() {
+        document.getElementsByClassName("loader")[0].style.display = "block";
+    }
+</script>
+</body>
+</html>
