@@ -15,7 +15,8 @@ pip install flask, opencv-python, numpy, scikit-learn
 
 ### RUNING
 
-console```
+
+```python
 
 python main.py
 
