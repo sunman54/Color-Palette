@@ -4,12 +4,19 @@ a Image Processing Web application that gives you the most dominant colors with 
 
 ### INSTALLING
 
-python ```
+
+
+```python
+
 pip install flask, opencv-python, numpy, scikit-learn
+
 ```
+
 
 ### RUNING
 
 console```
+
 python main.py
+
 ```
